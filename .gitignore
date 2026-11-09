@@ -1,0 +1,20 @@
+# 本機環境
+.venv/
+.vscode/
+__pycache__/
+*.pyc
+
+# 健保整批檔（約 200 MB，超過 GitHub 單檔上限；請自行從健保署下載）
+*.TXT
+all1_*
+*.b64
+
+# 資料庫與備份（可能含真實資料）
+*.bak
+*.mdf
+*.ldf
+demo.db
+
+# 含本機路徑與連線設定
+run.bat
+.env

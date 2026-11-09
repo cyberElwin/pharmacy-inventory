@@ -1,0 +1,9 @@
+@echo off
+chcp 65001 >nul
+cd /d "%~dp0"
+REM 啟動虛擬環境：改成你自己的路徑；沒有使用虛擬環境就刪掉下一行
+call <你的虛擬環境資料夾>\Scripts\activate.bat
+set PHARMACY_DB=sqlserver
+set PHARMACY_ODBC=DRIVER={ODBC Driver 18 for SQL Server};SERVER=localhost\SQLEXPRESS;DATABASE=藥局庫存;Trusted_Connection=yes;TrustServerCertificate=yes;
+streamlit run app.py
+pause
